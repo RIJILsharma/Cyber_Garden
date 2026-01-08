@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cyber Garden | Ransomware Prevention</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>🌱 Cyber Garden</h1>
+    <p>Proactive Ransomware Prevention Platform</p>
+</header>
+
+<nav>
+    <a href="#home">Home</a>
+    <a href="#scan">File Scan</a>
+    <a href="#url">URL Check</a>
+    <a href="#dashboard">Dashboard</a>
+    <a href="#learn">Learn</a>
+</nav>
+
+<section id="home" class="card">
+    <h2>About Cyber Garden</h2>
+    <p>
+        Ransomware attacks are increasing rapidly. Cyber Garden helps users
+        <strong>prevent</strong> attacks before damage occurs through scanning,
+        threat intelligence, and cybersecurity education.
+    </p>
+</section>
+
+<section id="scan" class="card">
+    <h2>📁 File Malware Scan</h2>
+    <input type="file" id="fileInput">
+    <button onclick="scanFile()">Scan File</button>
+    <p id="fileResult"></p>
+</section>
+
+<section id="url" class="card">
+    <h2>🔗 URL Safety Checker</h2>
+    <input type="text" id="urlInput" placeholder="Enter URL">
+    <button onclick="checkURL()">Check URL</button>
+    <p id="urlResult"></p>
+</section>
+
+<section id="dashboard" class="card">
+    <h2>📊 Threat Dashboard</h2>
+    <p><strong>User Risk Score:</strong> <span id="riskScore">Low</span></p>
+    <ul>
+        <li>✔ Files scanned: <span id="filesScanned">0</span></li>
+        <li>✔ URLs checked: <span id="urlsChecked">0</span></li>
+        <li>✔ Threats blocked: <span id="threatsBlocked">0</span></li>
+    </ul>
+</section>
+
+<section id="learn" class="card">
+    <h2>🎓 Cybersecurity Education</h2>
+    <p><strong>Phishing Tip:</strong> Never click unknown email links.</p>
+    <p><strong>Ransomware Tip:</strong> Always backup your files.</p>
+    <button onclick="nextTip()">Next Tip</button>
+    <p id="tipResult"></p>
+</section>
+
+<footer>
+    <p>© 2026 Cyber Garden | Google Safe Browsing & Cloud Ready</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
